@@ -6,7 +6,7 @@ import { encode, distance, bearing } from './util';
 import * as fb from 'firebase/app';
 
 export interface FirePoint {
-  geopoint: fb.firestore.GeoPoint,
+  geopoint: [number, number],
   geohash: string
 }
 
